@@ -7,7 +7,3 @@ data/
 # Models
 model/*.pth
 
-# Images
-*.png
-*.jpg
-*.jpeg
