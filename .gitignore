@@ -4,6 +4,3 @@ __pycache__/
 # Data
 data/
 
-# Models
-model/*.pth
-
