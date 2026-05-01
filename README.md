@@ -1,180 +1,150 @@
-\# 🫁 Pneumonia Detection from Chest X-ray
-
-
-
-A deep learning web app that detects \*\*Pneumonia\*\* from chest X-ray images using a fine-tuned ResNet18 model.
-
-
-
-This project demonstrates an end-to-end machine learning pipeline:
-
-\- Data loading
-
-\- Model training
-
-\- Evaluation
-
-\- Deployment using Streamlit
-
-
-
-\---
-
-
-
-\## 🚀 Features
-
-
-
-\- Upload chest X-ray images
-
-\- Predicts \*\*Normal\*\* or \*\*Pneumonia\*\*
-
-\- Real-time inference
-
-\- Simple and clean UI using Streamlit
-
-
-
-\---
-
-
-
-\## 🧠 Model Details
-
-
-
-\- Model: ResNet18 (pretrained on ImageNet)
-
-\- Transfer Learning used
-
-\- Final layer modified for 2 classes
-
-\- Loss Function: CrossEntropyLoss
-
-\- Optimizer: Adam
-
-
-
-\---
-
-
-
-\## 📊 Performance
-
-
-
-| Metric | Value |
-
-|--------|------|
-
-| Accuracy | \~95% |
-
-| Pneumonia Recall | \~96% |
-
-| False Negatives | 32 |
-
-
-
-> ⚠️ In medical AI, minimizing false negatives is critical.  
-
-> This model achieves \~96% recall on Pneumonia cases, reducing missed diagnoses.
-
-
-
-\---
-
-
-
-\## 🖥️ Demo
-
-
-
-!\[App Screenshot](./screenshot.png)
+<h1 align="center">🫁 Pneumonia Detection from Chest X-ray</h1>
 
 <p align="center">
-
-&#x20; <img src="https://raw.githubusercontent.com/Abhhiiissshhek/pneumonia-detection/main/screenshot.png" width="800"/>
-
+  <b>AI-powered web app to detect Pneumonia using Deep Learning</b><br>
+  Built with ❤️ by <b>Rehan Vora</b>
 </p>
 
-\---
+<p align="center">
+  <a href="https://github.com/rehanvhora778">
+    <img src="https://img.shields.io/badge/GitHub-rehanvhora778-181717?style=for-the-badge&logo=github">
+  </a>
+  <img src="https://img.shields.io/badge/Model-ResNet18-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Accuracy-95%25-brightgreen?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Framework-Streamlit-red?style=for-the-badge">
+</p>
 
+---
 
+## 🎯 Project Overview
 
-\## ⚙️ Installation
+✨ This is an **AI-powered medical imaging web application** that detects **Pneumonia** from chest X-ray images using a fine-tuned **ResNet18 model**.
 
+💡 It demonstrates a complete **Machine Learning pipeline**:
 
+* 📂 Data Loading
+* 🧠 Model Training
+* 📊 Evaluation
+* 🌐 Deployment (Streamlit)
+
+---
+
+## 🖥️ App Preview
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Abhhiiissshhek/pneumonia-detection/main/screenshot.png" width="800"/>
+</p>
+
+---
+
+## 🚀 Features
+
+* 📤 Upload chest X-ray images
+* 🤖 Predicts **Normal / Pneumonia**
+* ⚡ Real-time inference
+* 🎨 Clean & interactive UI using Streamlit
+
+---
+
+## 🧠 Model Details
+
+| Component        | Description                       |
+| ---------------- | --------------------------------- |
+| 🧠 Model         | ResNet18 (Pretrained on ImageNet) |
+| 🔁 Technique     | Transfer Learning                 |
+| 🎯 Classes       | Binary (Normal / Pneumonia)       |
+| 📉 Loss Function | CrossEntropyLoss                  |
+| ⚙️ Optimizer     | Adam                              |
+
+---
+
+## 📊 Performance Metrics
+
+| Metric              | Value |
+| ------------------- | ----- |
+| ✅ Accuracy          | ~95%  |
+| 🔍 Pneumonia Recall | ~96%  |
+| ❗ False Negatives   | 32    |
+
+> ⚠️ In medical AI, minimizing false negatives is critical.
+> This model achieves ~96% recall, reducing missed diagnoses.
+
+---
+
+## ⚙️ Installation & Setup
 
 ```bash
-
-git clone https://github.com/Abhhiiissshhek/pneumonia-detection.git
-
+git clone https://github.com/rehanvhora778/pneumonia-detection.git
 cd pneumonia-detection
-
 pip install -r requirements.txt
+streamlit run app.py
+```
 
-streamlit run app.py     
+---
 
+## 📁 Project Structure
 
-
+```
 pneumonia-detection/
-
 │
-
 ├── app.py
-
 ├── src/
-
 ├── requirements.txt
-
 ├── README.md
+```
 
+---
 
+## 📂 Dataset
 
-📁 Dataset
+📌 Chest X-ray dataset from Kaggle
+(Not included due to large size)
 
-Chest X-ray dataset from Kaggle
+---
 
-(Dataset not included due to size)
+## ⚠️ Note
 
-⚠️ Note
+* `.pth` model file is not included
+* Train the model using `train.py`
 
-Model file (.pth) is not included due to size limits
+---
 
-You can train the model using train.py
+## 🌐 Live Demo
 
-🌐 Live Demo
+🚧 Coming Soon...
 
+---
 
+## 🚀 Future Improvements
 
-🚧 Coming soon (deployment in progress)
+* 🔻 Reduce false negatives
+* 📈 Add confidence score
+* ☁️ Deploy online (Render / AWS / HuggingFace)
+* 🧠 Improve generalization
 
+---
 
+## 🧠 Key Learnings
 
-🚀 Future Improvements
+✔️ Built end-to-end ML pipeline
+✔️ Learned Transfer Learning using ResNet18
+✔️ Understood importance of Recall in medical AI
+✔️ Deployed model using Streamlit
 
-Reduce false negatives
+---
 
-Add confidence score output
+## 👨‍💻 Author
 
-Deploy app online
+<p align="center">
+  <b>Rehan Vora</b><br>
+  🚀 AI & Full Stack Developer<br><br>
+  <a href="https://github.com/rehanvhora778">
+    <img src="https://img.shields.io/badge/GitHub-rehanvhora778-black?style=for-the-badge&logo=github">
+  </a>
+</p>
 
-Improve generalization
+---
 
-🧠 Key Learnings
+## ⭐ Support
 
-Built an end-to-end ML pipeline from data loading to deployment
-
-Learned transfer learning using ResNet18
-
-Understood importance of recall in medical AI
-
-Deployed model using Streamlit for real-time inference
-
-👨‍💻 Author
-
-
-
-Abhishek Prajapati (abhhiiissshhek\_ml)
-
+If you like this project, give it a ⭐ on GitHub!
